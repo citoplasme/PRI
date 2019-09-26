@@ -1,2 +1,2 @@
 # PRI
-Information's processamento and representation
+Information's processing and representation

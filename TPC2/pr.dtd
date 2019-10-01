@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT project_record (cabecalho, work_team, abstract, deliverables) >
+
+<!ELEMENT cabecalho (key_name, title, subtitle?, begin_date?, end_date) >
+<!ELEMENT key_name (#PCDATA) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT begin_date (#PCDATA) >
+<!ELEMENT end_date (#PCDATA) >
+
+<!ELEMENT work_team (pessoa+) >
+<!ELEMENT pessoa (nome,numero,email) >
+<!ELEMENT nome (#PCDATA) >
+<!ELEMENT numero (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+
+
+<!ELEMENT abstract (paragrafo)+ >
+<!ELEMENT paragrafo (#PCDATA|bold|italico|underline|link)* >
+
+<!ELEMENT deliverables (link)+ >
+<!ELEMENT link (#PCDATA) >
+<!ATTLIST link
+          path CDATA #REQUIRED >
+
+<!ELEMENT bold (#PCDATA|italico|underline)* >
+<!ELEMENT italico (#PCDATA|bold|underline)* >
+<!ELEMENT underline (#PCDATA|bold|italico)* >

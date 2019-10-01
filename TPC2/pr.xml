@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE project_record SYSTEM "file:/Users/JoaoPimentel/Desktop/PRI_TPC2/pr.dtd">
+<project_record>
+    <cabecalho>
+        <key_name>PRI_TPC2</key_name>
+        <title>Especificação de um DTD e queries com XPath</title>
+        <subtitle>TP2 da UC PRI do perfil de PLC 2019/2020</subtitle>
+        <begin_date>2019-09-30</begin_date>
+        <end_date>2019-09-30</end_date>
+    </cabecalho>
+    <work_team>
+        <pessoa>
+            <nome>João Pedro Torres Pimentel</nome>
+            <numero>A80874</numero>
+            <email>a80874@alunos.uminho.pt</email>
+        </pessoa>
+    </work_team>
+    <abstract>
+        <paragrafo>
+            Um <bold>DTD</bold> <italico>(Document Type Definition)</italico> é uma definição formal para a estrutura de um documento <bold>SGML</bold> <italico>(Standard Generalized Markup Language)</italico>.
+            Define as regras que um documento <bold>XML</bold> deve seguir, definindo a estrutura do documento com uma lista de elementos e atributos.
+        </paragrafo>
+        
+        <paragrafo>
+            O problema em questão é referente à estruturação de uma síntaxe para ficheiros do tipo <italico>Project Resolver</italico>, ou seja, um documento que permita a leitura de um resumo do projeto e contenha referências para todos os seus componentes. Deve, ainda, conter informações sobre o seu autor e a que se refere, informação que deve aparecer na forma de título e, opcionalmente, subtítulo.
+        </paragrafo>
+        
+        <paragrafo>
+            Note-se que a solução apresentada não é a única, visto que o DTD poderá ser organizado de várias formas para um mesmo problema.
+        </paragrafo>
+        
+        <paragrafo>
+            Além disso, foi pedido que fosse resolvido um certo número de <italico>queries</italico> <bold>XPath</bold>, relativas a fichas práticas presentes num determinado <link path="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/">repositório</link>.
+        </paragrafo>
+    </abstract>
+    <deliverables>
+        <link path="www.github.com/citoplasme/PRI/TPC2">Github</link>
+    </deliverables>
+</project_record>

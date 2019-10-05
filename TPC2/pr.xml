@@ -34,6 +34,10 @@
         </paragrafo>
     </abstract>
     <deliverables>
-        <link path="www.github.com/citoplasme/PRI/TPC2">Github</link>
+        <link path="https://github.com/citoplasme/PRI/tree/master/TPC2">Github</link>
+        <link path="https://github.com/citoplasme/PRI/blob/master/TPC2/pr.xml">Project Record</link>
+        <link path="https://github.com/citoplasme/PRI/blob/master/TPC2/pr.dtd">DTD</link>
+        <link path="https://github.com/citoplasme/PRI/blob/master/TPC2/agenda.txt">Agenda</link>
+        <link path="https://github.com/citoplasme/PRI/blob/master/TPC2/arq.txt">Arqueossítios</link>        
     </deliverables>
 </project_record>

@@ -165,5 +165,9 @@
     <xsl:template match="IMAGEM">
         <tr><th align="left">Imagem:</th><td><xsl:value-of select="@NOME"/></td></tr>
     </xsl:template>
+    
+    <xsl:template match="TIPO">
+        <tr><th align="left">Tipo:</th><td><xsl:value-of select="@ASSUNTO"/></td></tr>
+    </xsl:template>
   
 </xsl:stylesheet>

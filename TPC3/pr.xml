@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI_TPC3</keyname>
+        <title>Definição de Stylesheets</title>
+        <subtitle>TP3 da UC PRI do perfil de PLC 2019/2020</subtitle>
+        <bdate>2019-10-07</bdate>
+        <edate>2019-10-14</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <name>João Pedro Torres Pimentel</name>
+            <identifier>A80874</identifier>
+            <email>a80874@alunos.uminho.pt</email>
+            <photo path="me.jpeg"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Sendo este o terceiro trabalho semanal da <i>UC</i> de <b>PRI</b> e, tendo já sido lecionadas técnicas para associar <i>stylesheets</i> a ficheiros <b>XML</b>, este tema é o núcleo deste projeto.
+        </p>
+        
+        <p>
+            Sendo assim, foi proposta, numa primeira fase, a realização de um <i>project record</i>, bem como o seu <b>XSL</b> <i>(eXtensible Stylesheet Language for Transformation)</i>. 
+            Através deste <i>stylesheet</i> tornou-se possível organizar o visual do <i>project record</i>, permitindo uma simples leitura do mesmo.
+        </p>
+   
+        <p>
+            Além disso, este projeto requere a realização de uma <i>stylesheet</i> para um <i>dataset</i> sobre <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">arqueossítios</xref>. Note-se que a principal diferença desta tarefa comparativamente com a referente ao <i>project record</i> é que esta implica a geração de um índice e, consequentemente, uma página <i>web</i> por entrada no ficheiro. Quer isto dizer que é necessário percorrer a árvore de <i>parser</i> uma primeira vez para gerar o índice e outra para as páginas individuais.
+        </p>
+   
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/citoplasme/PRI/tree/master/TPC3">Github</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/pr.xml">Project Record</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/pr.html">Project Record HTML</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/pr.dtd">DTD Project Record</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/arq.xsl">Stylesheet Arqueossítios</deliverable> 
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/website">Website</deliverable>
+    </deliverables>
+</pr>
+

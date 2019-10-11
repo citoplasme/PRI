@@ -41,7 +41,7 @@
         <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/pr.html">Project Record HTML</deliverable>
         <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/pr.dtd">DTD Project Record</deliverable>
         <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/arq.xsl">Stylesheet Arqueossítios</deliverable> 
-        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC3/website">Website</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/tree/master/TPC3/website">Website</deliverable>
     </deliverables>
 </pr>
 

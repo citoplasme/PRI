@@ -1,0 +1,11 @@
+{
+  "name": "pri_tpc4",
+  "version": "1.0.0",
+  "description": "TPC 4 da UC PRI - PLC19/20",
+  "main": "musica.js",
+  "scripts": {
+    "start": "node musica"
+  },
+  "author": "João Pimentel",
+  "license": "ISC"
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI_TPC4</keyname>
+        <title>Servidores em NodeJS</title>
+        <subtitle>TP4 da UC PRI do perfil de PLC 2019/2020</subtitle>
+        <bdate>2019-10-21</bdate>
+        <edate>2019-10-27</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <name>João Pedro Torres Pimentel</name>
+            <identifier>A80874</identifier>
+            <email>a80874@alunos.uminho.pt</email>
+            <photo path="me.jpeg"/>
+        </member>
+    </workteam>
+    <abstract>
+        
+        <p>
+            Este quarto trabalho semanal baseia-se na criação de um servidor em <b>nodeJS</b> referente à gestão de um arquivo sonoro, sendo que este deve responder a diferentes pedidos de um cliente.
+        </p>
+        
+        <p>
+            O primeiro passo foi dividir o <i>dataset</i> que continha todos os documentos sonoros em vários ficheiros, cada um contendo um e um só documento sonoro. Além disso, cada um destes novos ficheiros teve associado ao seu nome um identificador, utilizado para interrogar o servidor, mais tarde.
+        </p>
+        
+        <p>
+            Em seguida, foi definida uma <i>stylesheet</i> que converte um documento sonoro <b>XML</b> numa página <b>HTML</b>, dispondo todo o seu conteúdo de forma percetível e simples.
+        </p>
+        
+        <p>
+            No que toca ao servidor, este estaria a funcionar, recebendo pedidos na forma <b>/musica/NUM</b>, sendo que procura o valor presente na variável <b>NUM</b>, retornando a informação presente no documento identificado pelo mesmo. Note-se que o documento <i>XML</i> é obtido primeiramente, sendo seguida a obtenção da <i>stylesheet</i> de conversão para <i>HTML</i> e, por fim, do ficheiro de <i>CSS</i> associado ao <i>styling</i> do documento <i>web</i>. É, ainda, de destacar que o servidor apenas responde a pedidos de <i>GET</i>, sendo que retorna erro quando o método ou o pedido não são suportados.
+        </p>
+        
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/citoplasme/PRI/tree/master/TPC4">Github</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC4/pr.xml">Project Record</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC4/pr.html">Project Record HTML</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC4/pr.dtd">DTD Project Record</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC4/cria-dataset.xsl">Stylesheet Para Dividir Dataset</deliverable> 
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC4/doc2html.xsl">Stylesheet XML - HTML</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/tree/master/TPC4/data">Data</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC4/musica.js">Servidor NodeJS</deliverable>
+    </deliverables>
+</pr>
+
+

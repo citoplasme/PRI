@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>
+         Project Record
+         
+      </title>
+      <meta charset="UTF-8"></meta>
+      <style>
+         * {
+         font-family: Lucida Grande;
+         }
+         
+         div {
+         box-sizing: border-box;
+         text-align: justify;
+         text-justify: inter-word;
+         }
+         
+         .column {
+         float: left;
+         width: 33.33%;
+         padding: 5px;
+         }
+         
+         .row::after {
+         content: "";
+         clear: both;
+         display: table;
+         }
+         
+         
+      </style>
+   </head>
+   <body>
+      <div style="margin:2cm">
+         
+         
+         <p align="left">PRI_TPC4
+            <span style="float:right;">
+               Universidade do Minho
+               
+            </span>
+         </p>
+         
+         <h1 align="center">Servidores em NodeJS</h1>
+         
+         <h3 align="center">TP4 da UC PRI do perfil de PLC 2019/2020</h3>
+         
+         <h5 align="center"> Begin Date: 
+            2019-10-21
+         </h5>
+         
+         <h5 align="center"> End Date: 
+            2019-10-27
+         </h5>
+         
+         <hr></hr>
+         <h2>
+            <b>Supervisor</b>
+         </h2>
+         
+         <p>
+            <b>Name: </b>José Carlos Ramalho
+         </p>
+         
+         <p>
+            <b>Homepage:</b>
+            <a href="http://www4.di.uminho.pt/~jcr/">http://www4.di.uminho.pt/~jcr/</a>
+         </p>
+         
+         <p>
+            <b>Email: </b>
+            <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
+         </p>
+         
+         
+         
+         <hr></hr>
+         <h2>Workteam</h2>
+         <div class="row">
+            
+            <div class="column">
+               
+               <p>
+                  <b>Name: </b>João Pedro Torres Pimentel
+               </p>
+               
+               <p>
+                  <b>Identifier: </b>A80874
+               </p>
+               
+               <p>
+                  <b>Email: </b>
+                  <a href="mailto:a80874@alunos.uminho.pt">a80874@alunos.uminho.pt</a>
+               </p>
+               
+               <img src="me.jpeg" alt="me.jpeg" width="250"></img>
+               
+            </div>
+            
+         </div>
+         
+         <hr></hr>
+         <h2>Abstract</h2>
+         <div>
+            
+            
+            <p>
+               Este quarto trabalho semanal baseia-se na criação de um servidor em 
+               <b>nodeJS</b> referente à gestão de um arquivo sonoro, sendo que este deve responder a diferentes
+               pedidos de um cliente.
+               
+            </p>
+            
+            
+            <p>
+               O primeiro passo foi dividir o 
+               <i>dataset</i> que continha todos os documentos sonoros em vários ficheiros, cada um contendo um
+               e um só documento sonoro. Além disso, cada um destes novos ficheiros teve associado
+               ao seu nome um identificador, utilizado para interrogar o servidor, mais tarde.
+               
+            </p>
+            
+            
+            <p>
+               Em seguida, foi definida uma 
+               <i>stylesheet</i> que converte um documento sonoro 
+               <b>XML</b> numa página 
+               <b>HTML</b>, dispondo todo o seu conteúdo de forma percetível e simples.
+               
+            </p>
+            
+            
+            <p>
+               No que toca ao servidor, este estaria a funcionar, recebendo pedidos na forma 
+               <b>/musica/NUM</b>, sendo que procura o valor presente na variável 
+               <b>NUM</b>, retornando a informação presente no documento identificado pelo mesmo. Note-se que
+               o documento 
+               <i>XML</i> é obtido primeiramente, sendo seguida a obtenção da 
+               <i>stylesheet</i> de conversão para 
+               <i>HTML</i> e, por fim, do ficheiro de 
+               <i>CSS</i> associado ao 
+               <i>styling</i> do documento 
+               <i>web</i>. É, ainda, de destacar que o servidor apenas responde a pedidos de 
+               <i>GET</i>, sendo que retorna erro quando o método ou o pedido não são suportados.
+               
+            </p>
+            
+            
+            
+         </div>
+         
+         <hr></hr>
+         <h2>Deliverables</h2>
+         <ol>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/tree/master/TPC4">Github</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC4/pr.xml">Project Record</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC4/pr.html">Project Record HTML</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC4/pr.dtd">DTD Project Record</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC4/cria-dataset.xsl">Stylesheet Para Dividir Dataset</a>
+            </li> 
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC4/doc2html.xsl">Stylesheet XML - HTML</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/tree/master/TPC4/data">Data</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC4/musica.js">Servidor NodeJS</a>
+            </li>
+            
+         </ol>
+         
+      </div>
+      <hr></hr>
+      <p align="center">22/10/2019</p>
+   </body>
+</html>

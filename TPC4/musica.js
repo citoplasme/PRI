@@ -4,10 +4,11 @@ var fs = require('fs')
 var myserver = http.createServer(function(req,res) {
     var spl = req.url.split('/')
     var num = spl[spl.length-1]
-    
+    var musica = spl[spl.length-2]
+
     console.log(req.method + ' ' + req.url)
     if(req.method == 'GET'){
-        if((parseInt(num,10) > 0) && (parseInt(num,10) < 449)){
+        if((musica == 'musica') && (parseInt(num,10) > 0) && (parseInt(num,10) < 449)){
             fs.readFile('data/doc' + num + '.xml', (erro, dados)=>{
                 if(!erro){
                     res.writeHead(200, {'Content-Type':'text/xml'}) 

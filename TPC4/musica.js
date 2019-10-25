@@ -59,4 +59,4 @@ var myserver = http.createServer(function(req,res) {
 
 myserver.listen(3021); 
 
-console.log("servidor á escuta na porta 3021...");
+console.log("servidor à escuta na porta 3021...");

@@ -34,7 +34,7 @@
     <deliverables>
         <deliverable path="https://github.com/citoplasme/PRI/tree/master/TPC5">Github</deliverable>
         <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC5/TPC5">Servidor</deliverable>
-        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC4/PR/pr.html">Project Record HTML</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC5/PR/pr.html">Project Record HTML</deliverable>
     </deliverables>
 </pr>
 

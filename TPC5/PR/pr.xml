@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI_TPC5</keyname>
+        <title>Servidores em NodeJS (ExpressJS)</title>
+        <subtitle>TP5 da UC PRI do perfil de PLC 2019/2020</subtitle>
+        <bdate>2019-10-28</bdate>
+        <edate>2019-11-03</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <name>João Pedro Torres Pimentel</name>
+            <identifier>A80874</identifier>
+            <email>a80874@alunos.uminho.pt</email>
+            <photo path="me.jpeg"/>
+        </member>
+    </workteam>
+    <abstract>
+        
+        <p>
+            Este quinto trabalho semanal baseia-se na criação de um servidor em <b>NodeJS</b> com auxílio de <b>ExpressJS</b> referente à gestão de uma lista de alunos. Note-se que cada aluno deve possuir um identificador, um nome, um curso, bem como uma listagem de notas. Cada uma das notas tem um indicador e um valor.
+        </p>
+        
+        <p>
+            O servidor apenas poderia receber pedidos de <b>GET</b> para <i>/alunos</i>, listando todo os alunos existentes na BD, e para <i>/alunos/:id</i> devendo apresentar um único aluno, representado pelo identificador em questão. No que toca a pedidos de <b>POST</b>, caso fosse para <i>/alunos</i>, um novo aluno deveria ser adicionado à BD, sendo que as suas notas seriam uma lista vazia. Outra situação possível de efetuar um pedido deste género é para <i>/alunos/:idAluno/notas</i>, em que deve ser adicionada uma nota ao aluno retratado pelo identificador em questão. Por fim, caso seja recebido um pedido de <b>DELETE</b> em <i>/alunos/:id</i>, o aluno em questão deve ser removido da BD. É, ainda, possível remover uma nota de um determinado aluno através de um pedido de <b>DELETE</b> em <i>/alunos/:idAluno/notas/:indicador</i>, sendo a nota representada pelo indicador.
+        </p>
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/citoplasme/PRI/tree/master/TPC5">Github</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC5/TPC5">Servidor</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC4/PR/pr.html">Project Record HTML</deliverable>
+    </deliverables>
+</pr>
+
+

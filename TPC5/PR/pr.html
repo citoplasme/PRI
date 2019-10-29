@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>
+         Project Record
+         
+      </title>
+      <meta charset="UTF-8"></meta>
+      <style>
+         * {
+         font-family: Lucida Grande;
+         }
+         
+         div {
+         box-sizing: border-box;
+         text-align: justify;
+         text-justify: inter-word;
+         }
+         
+         .column {
+         float: left;
+         width: 33.33%;
+         padding: 5px;
+         }
+         
+         .row::after {
+         content: "";
+         clear: both;
+         display: table;
+         }
+         
+         
+      </style>
+   </head>
+   <body>
+      <div style="margin:2cm">
+         
+         
+         <p align="left">PRI_TPC5
+            <span style="float:right;">
+               Universidade do Minho
+               
+            </span>
+         </p>
+         
+         <h1 align="center">Servidores em NodeJS (ExpressJS)</h1>
+         
+         <h3 align="center">TP5 da UC PRI do perfil de PLC 2019/2020</h3>
+         
+         <h5 align="center"> Begin Date: 
+            2019-10-28
+         </h5>
+         
+         <h5 align="center"> End Date: 
+            2019-11-03
+         </h5>
+         
+         <hr></hr>
+         <h2>
+            <b>Supervisor</b>
+         </h2>
+         
+         <p>
+            <b>Name: </b>José Carlos Ramalho
+         </p>
+         
+         <p>
+            <b>Homepage:</b>
+            <a href="http://www4.di.uminho.pt/~jcr/">http://www4.di.uminho.pt/~jcr/</a>
+         </p>
+         
+         <p>
+            <b>Email: </b>
+            <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
+         </p>
+         
+         
+         
+         <hr></hr>
+         <h2>Workteam</h2>
+         <div class="row">
+            
+            <div class="column">
+               
+               <p>
+                  <b>Name: </b>João Pedro Torres Pimentel
+               </p>
+               
+               <p>
+                  <b>Identifier: </b>A80874
+               </p>
+               
+               <p>
+                  <b>Email: </b>
+                  <a href="mailto:a80874@alunos.uminho.pt">a80874@alunos.uminho.pt</a>
+               </p>
+               
+               <img src="me.jpeg" alt="me.jpeg" width="250"></img>
+               
+            </div>
+            
+         </div>
+         
+         <hr></hr>
+         <h2>Abstract</h2>
+         <div>
+            
+            
+            <p>
+               Este quinto trabalho semanal baseia-se na criação de um servidor em 
+               <b>NodeJS</b> com auxílio de 
+               <b>ExpressJS</b> referente à gestão de uma lista de alunos. Note-se que cada aluno deve possuir um
+               identificador, um nome, um curso, bem como uma listagem de notas. Cada uma das notas
+               tem um indicador e um valor.
+               
+            </p>
+            
+            
+            <p>
+               O servidor apenas poderia receber pedidos de 
+               <b>GET</b> para 
+               <i>/alunos</i>, listando todo os alunos existentes na BD, e para 
+               <i>/alunos/:id</i> devendo apresentar um único aluno, representado pelo identificador em questão. No
+               que toca a pedidos de 
+               <b>POST</b>, caso fosse para 
+               <i>/alunos</i>, um novo aluno deveria ser adicionado à BD, sendo que as suas notas seriam uma lista
+               vazia. Outra situação possível de efetuar um pedido deste género é para 
+               <i>/alunos/:idAluno/notas</i>, em que deve ser adicionada uma nota ao aluno retratado pelo identificador em questão.
+               Por fim, caso seja recebido um pedido de 
+               <b>DELETE</b> em 
+               <i>/alunos/:id</i>, o aluno em questão deve ser removido da BD. É, ainda, possível remover uma nota
+               de um determinado aluno através de um pedido de 
+               <b>DELETE</b> em 
+               <i>/alunos/:idAluno/notas/:indicador</i>, sendo a nota representada pelo indicador.
+               
+            </p>
+            
+            
+         </div>
+         
+         <hr></hr>
+         <h2>Deliverables</h2>
+         <ol>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/tree/master/TPC5">Github</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC5/TPC5">Servidor</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC4/PR/pr.html">Project Record HTML</a>
+            </li>
+            
+         </ol>
+         
+      </div>
+      <hr></hr>
+      <p align="center">29/10/2019</p>
+   </body>
+</html>

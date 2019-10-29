@@ -1,0 +1,43 @@
+extends layout
+block content
+    <div class="w3-content" style="max-width:1600px">
+        header.w3-container.w3-center.w3-padding-48.w3-black
+            h1.w3-xxxlarge Aluno
+    </div>
+    .w3-container
+        p <b>Identificador: </b> 
+            =item.identificador
+        p <b>Nome: </b>
+            =item.nome
+        p <b>Curso: </b>
+            =item.curso
+        p <b>Notas: </b>
+        table.w3-table-all.w3-hoverable
+            tr  
+                th Identificador
+                th Nota
+                th Operações
+            each a in item.notas
+                tr
+                    td= a.indicador
+                    td= a.nota
+                    td
+                        button.w3-button.w3-round-xlarge.w3-red(onclick="removeNota('" + item.identificador + "','" + a.indicador + "')") Delete  
+    hr
+    .w3-container
+        h3 <b>Nova Nota:</b>
+        form.w3-container(action="/alunos/"+item.identificador+"/notas" method='POST')
+            label
+                b Indicador 
+            input.w3-input.w3-border.w3-light-grey(type='text' name='indicador')
+            label
+                b Nota 
+            input.w3-input.w3-border.w3-light-grey(type='text' name='nota')
+            label
+            input.w3-button.w3-round-xlarge.w3-right.w3-blue-grey(type='submit' value='Enviar')
+    hr
+    .w3-container
+        form(method="get" action=`/alunos`)
+            button.w3-button.w3-round-xlarge.w3-right.w3-blue-grey(type="submit") Back
+    .w3-container.w3-black
+        <h3 align=center> Powered by: <a href="https://www.w3schools.com">w3.css</a></h3>                    

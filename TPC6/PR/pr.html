@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>
+         Project Record
+         
+      </title>
+      <meta charset="UTF-8"></meta>
+      <style>
+         * {
+         font-family: Lucida Grande;
+         }
+         
+         div {
+         box-sizing: border-box;
+         text-align: justify;
+         text-justify: inter-word;
+         }
+         
+         .column {
+         float: left;
+         width: 33.33%;
+         padding: 5px;
+         }
+         
+         .row::after {
+         content: "";
+         clear: both;
+         display: table;
+         }
+         
+         
+      </style>
+   </head>
+   <body>
+      <div style="margin:2cm">
+         
+         
+         <p align="left">PRI_TPC6
+            <span style="float:right;">
+               Universidade do Minho
+               
+            </span>
+         </p>
+         
+         <h1 align="center">Servidores em NodeJS (ExpressJS) - API de Dados</h1>
+         
+         <h3 align="center">TP6 da UC PRI do perfil de PLC 2019/2020</h3>
+         
+         <h5 align="center"> Begin Date: 
+            2019-11-04
+         </h5>
+         
+         <h5 align="center"> End Date: 
+            2019-11-10
+         </h5>
+         
+         <hr></hr>
+         <h2>
+            <b>Supervisor</b>
+         </h2>
+         
+         <p>
+            <b>Name: </b>José Carlos Ramalho
+         </p>
+         
+         <p>
+            <b>Homepage:</b>
+            <a href="http://www4.di.uminho.pt/~jcr/">http://www4.di.uminho.pt/~jcr/</a>
+         </p>
+         
+         <p>
+            <b>Email: </b>
+            <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
+         </p>
+         
+         
+         
+         <hr></hr>
+         <h2>Workteam</h2>
+         <div class="row">
+            
+            <div class="column">
+               
+               <p>
+                  <b>Name: </b>João Pedro Torres Pimentel
+               </p>
+               
+               <p>
+                  <b>Identifier: </b>A80874
+               </p>
+               
+               <p>
+                  <b>Email: </b>
+                  <a href="mailto:a80874@alunos.uminho.pt">a80874@alunos.uminho.pt</a>
+               </p>
+               
+               <img src="me.jpeg" alt="me.jpeg" width="250"></img>
+               
+            </div>
+            
+         </div>
+         
+         <hr></hr>
+         <h2>Abstract</h2>
+         <div>
+            
+            
+            <p>
+               Este sexto trabalho semanal baseia-se na criação de um servidor em 
+               <b>NodeJS</b> com auxílio de 
+               <b>ExpressJS</b> referente à gestão de uma base de dados em 
+               <b>MongoDB</b>. Assim, com auxílio de roteadores e uma 
+               <b>API</b> de dados, sejam efetuadas operações de adição, remoção e listagem sobre a BD.
+               
+               
+            </p>
+            
+            
+            <p>
+               O servidor apenas poderia receber pedidos de 
+               <b>GET</b> para 
+               <i>/</i>, retornando uma página inicial; 
+               <i>/filmes</i>, listando todo os filmes existentes na BD; para 
+               <i>/filmes/:id</i> devendo apresentar um único filmes, representado pelo identificador em questão; e
+               para 
+               <i>/filmes/inserir</i>, retornando uma página com um formulário. 
+               No que toca a pedidos de 
+               <b>POST</b>, caso fosse para 
+               <i>/filmes</i>, um novo filme deveria ser adicionado à BD. Note-se que, devido ao uso de um formulário
+               estático, apenas existem cinco vagas quer no elenco, quer nos géneros do filme. 
+               Por fim, caso seja recebido um pedido de 
+               <b>DELETE</b> em 
+               <i>/filmes/:id</i>, o filme em questão deve ser removido da BD. 
+               é, ainda, de destacar que as operações de alteração sobre a BD passam pela 
+               <i>API</i> de dados, sendo que esta possui os seguintes pedidos: 
+               <b>GET</b> em 
+               <i>/api/filmes</i> e 
+               <i>/api/filmes/:id</i>; 
+               <b>POST</b> em 
+               <i>/api/filmes</i>; e 
+               <b>DELETE</b> em 
+               <i>/api/filmes/:id</i>.
+               
+            </p>
+            
+            
+         </div>
+         
+         <hr></hr>
+         <h2>Deliverables</h2>
+         <ol>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/tree/master/TPC6">Github</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC6/filmes">Servidor</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/TPC6/PR/pr.html">Project Record HTML</a>
+            </li>
+            
+         </ol>
+         
+      </div>
+      <hr></hr>
+      <p align="center">05/11/2019</p>
+   </body>
+</html>

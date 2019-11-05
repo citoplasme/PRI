@@ -37,9 +37,9 @@ router.post('/', function(req, res){
 })
 
 router.delete('/:id', function(req, res, next){
-  axios.delete('http://localhost:3004/api/filmes' + req.params.id)
+  axios.delete('http://localhost:3004/api/filmes/' + req.params.id)
   .then(dados => {
-    res.redirect('/')
+    res.redirect(303,'/')
   })
   .catch(erro => {
     res.render('error', {error : erro})

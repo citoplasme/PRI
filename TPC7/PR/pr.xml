@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI_TPC7</keyname>
+        <title>Servidores em NodeJS (ExpressJS) - API de Dados</title>
+        <subtitle>TP7 da UC PRI do perfil de PLC 2019/2020</subtitle>
+        <bdate>2019-11-11</bdate>
+        <edate>2019-11-17</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <name>João Pedro Torres Pimentel</name>
+            <identifier>A80874</identifier>
+            <email>a80874@alunos.uminho.pt</email>
+            <photo path="me.jpeg"/>
+        </member>
+    </workteam>
+    <abstract>
+        
+        <p>
+            Este último trabalho semanal baseia-se na criação de um servidor em <b>NodeJS</b> com auxílio de <b>ExpressJS</b> referente à gestão de uma base de dados em <b>MongoDB</b>. Assim, com auxílio de roteadores e uma <b>API</b> de dados, sejam efetuadas operações de listagem sobre a BD, permitindo um aprofundamento na matéria em questão.
+            
+        </p>
+        
+        <p>
+            O servidor apenas poderia receber pedidos de <b>GET</b> para <i>/obras</i>, listando todas as obras na BD; opcionalmente, este pedido poderia receber uma filtragem por período a partir de <i>/obras?periodo=X</i>, devolvendo apenas as obras do período pretendido; também poderia ser <i>/obras?anoCriacao=Y</i>, devolvendo todas as obras criada no ano <i>Y</i>; e, para o caso de ser pretendido efetuar uma listagem de todas as obras de um compositor, o pedido deveria ser <i>/obras?compositor=A</i>.
+        </p>
+
+        <p>
+        	Além disso, o servidor poderia receber mais dois pedidos: <i>/compositores</i>, devolvendo todos os compositores (valores distintos) existentes na BD; e <i>/compositores/:nome</i>, retornando os mesmos que valores que no caso do pedido <i>/obras?Compositor=A</i>, sendo que <i>A</i> e <i>nome</i> deveriam ter o mesmo valor.
+        </p>
+
+        <p>
+        	Por fim, note-se que não foram utilizadas vistas, já que o objetivo do trabalho era aprofundar a definição de APIs de dados.
+        </p>
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/citoplasme/PRI/tree/master/TPC7">Github</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC7/obras">Servidor</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC7/PR/pr.html">Project Record HTML</deliverable>
+    </deliverables>
+</pr>
+
+

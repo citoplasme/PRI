@@ -6,4 +6,5 @@ __TPC3__ - Stylesheets (XSL)
 __TPC4__ - Servidores NodeJS   
 __TPC5__ - Servidores NodeJS (ExpressJS)  
 __TPC6__ - Servidores NodeJS (ExpressJS) + API Dados  
-__TPC7__ - Servidores NodeJS (ExpressJS) + API Dados  
+__TPC7__ - Servidores NodeJS (ExpressJS) + API Dados    
+__TPC8__ - Servidores NodeJS (ExpressJS) + JQuery  

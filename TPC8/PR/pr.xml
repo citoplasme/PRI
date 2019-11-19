@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pr>
+    <meta>
+        <keyname>PRI_TPC8</keyname>
+        <title>Servidores em NodeJS (ExpressJS) - JQuery</title>
+        <subtitle>TP8 da UC PRI do perfil de PLC 2019/2020</subtitle>
+        <bdate>2019-11-18</bdate>
+        <edate>2019-11-24</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+            <email>jcr@di.uminho.pt</email>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <name>João Pedro Torres Pimentel</name>
+            <identifier>A80874</identifier>
+            <email>a80874@alunos.uminho.pt</email>
+            <photo path="me.jpeg"/>
+        </member>
+    </workteam>
+    <abstract>
+        
+        <p>
+            Este trabalho semanal baseia-se na criação de um servidor em <b>NodeJS</b> com auxílio de <b>ExpressJS</b> referente à gestão de uma base de dados em <b>MongoDB</b>, com interação com o <i>File System</i>. Assim, com auxílio de roteadores e uma <b>API</b> de dados, sejam efetuadas operações de listagem sobre a BD, permitindo um aprofundamento na matéria em questão.
+            
+        </p>
+        
+        <p>
+            O servidor deveria permitir a adição de multiplos ficheiros ou apenas um ao sistema, bem como listar todos os que se encontram na BD. Além disso, ao efetuar um <i>click</i> sobre um registo, devem ser apresentadas as informações do mesmo, dentro de um <i>modal</i>. No caso desse registos ser referente a uma imagem, esta deve ser apresentada.
+        </p>
+        
+        <p>
+            Note-se que as pastas referentes a conteúdo foram colocadas vazias no repositório devido ao peso a elas associado. Além disso, tendo em conta a necessidade de representação das imagens, estas devem ser guardadas na diretoria <b>data</b> e em <b>public/images</b>.
+        </p>
+
+        
+        
+    </abstract>
+    <deliverables>
+        <deliverable path="https://github.com/citoplasme/PRI/tree/master/TPC8">Github</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC8/ficheiros">Servidor</deliverable>
+        <deliverable path="https://github.com/citoplasme/PRI/blob/master/TPC8/PR/pr.html">Project Record HTML</deliverable>
+    </deliverables>
+</pr>
+
+

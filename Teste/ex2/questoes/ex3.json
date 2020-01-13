@@ -1,0 +1,86 @@
+[
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "150.30.001",
+        "titulo": "Produção e intercâmbio de informação estratégica para segurança interna e defesa",
+        "id": "c150.30.001"
+    },
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "550.10.600",
+        "titulo": "Reposição da ordem e gestão de incidentes de segurança",
+        "id": "c550.10.600"
+    },
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "550.20.003",
+        "titulo": "Realização de exercícios e simulacros",
+        "id": "c550.20.003"
+    },
+    {
+        "tipoPar": "temParticipanteApreciador",
+        "codigo": "550.20.006",
+        "titulo": "Atendimento telefónico de emergência",
+        "id": "c550.20.006"
+    },
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "550.20.501",
+        "titulo": "Atuação em estado de emergência",
+        "id": "c550.20.501"
+    },
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "550.30.003",
+        "titulo": "Atuação em estado de sítio",
+        "id": "c550.30.003"
+    },
+    {
+        "tipoPar": "temParticipanteComunicador",
+        "codigo": "650.10.019",
+        "titulo": "Concessão de pensões de preço de sangue",
+        "id": "c650.10.019"
+    },
+    {
+        "tipoPar": "temParticipanteComunicador",
+        "codigo": "650.10.020",
+        "titulo": "Concessão de pensões por serviços excecionais e relevantes prestados ao país",
+        "id": "c650.10.020"
+    },
+    {
+        "tipoPar": "temParticipanteComunicador",
+        "codigo": "650.10.212",
+        "titulo": "Concessão de pensões de ex-prisioneiro de guerra",
+        "id": "c650.10.212"
+    },
+    {
+        "tipoPar": "temParticipanteComunicador",
+        "codigo": "650.10.213",
+        "titulo": "Concessão de pensões por condecorações",
+        "id": "c650.10.213"
+    },
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "750.10.001",
+        "titulo": "Seleção e seriação para ingresso no ensino ou formação",
+        "id": "c750.10.001"
+    },
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "200.30.001",
+        "titulo": "Coordenação e execução de ações de ajuda humanitária e de emergência",
+        "id": "c200.30.001"
+    },
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "550.10.002",
+        "titulo": "Ação de segurança a eventos de alto risco",
+        "id": "c550.10.002"
+    },
+    {
+        "tipoPar": "temParticipanteAssessor",
+        "codigo": "550.20.500",
+        "titulo": "Ação de proteção e socorro",
+        "id": "c550.20.500"
+    }
+]

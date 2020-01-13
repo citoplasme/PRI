@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>
+         Project Record
+         
+      </title>
+      <meta charset="UTF-8"></meta>
+      <style>
+         * {
+         font-family: Lucida Grande;
+         }
+         
+         div {
+         box-sizing: border-box;
+         text-align: justify;
+         text-justify: inter-word;
+         }
+         
+         .column {
+         float: left;
+         width: 33.33%;
+         padding: 5px;
+         }
+         
+         .row::after {
+         content: "";
+         clear: both;
+         display: table;
+         }
+         
+         
+      </style>
+   </head>
+   <body>
+      <div style="margin:2cm">
+         
+         
+         <p align="left">PRI_TESTE
+            <span style="float:right;">
+               Universidade do Minho
+               
+            </span>
+         </p>
+         
+         <h1 align="center">Teste da UC de Processamento e Representação de Informação</h1>
+         
+         <h3 align="center">Perfil de PLC 2019/2020</h3>
+         
+         <h5 align="center"> Begin Date: 
+            2020-01-13
+         </h5>
+         
+         <h5 align="center"> End Date: 
+            2020-01-13
+         </h5>
+         
+         <hr></hr>
+         <h2>
+            <b>Supervisor</b>
+         </h2>
+         
+         <p>
+            <b>Name: </b>José Carlos Ramalho
+         </p>
+         
+         <p>
+            <b>Homepage:</b>
+            <a href="http://www4.di.uminho.pt/~jcr/">http://www4.di.uminho.pt/~jcr/</a>
+         </p>
+         
+         <p>
+            <b>Email: </b>
+            <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a>
+         </p>
+         
+         
+         
+         <hr></hr>
+         <h2>Workteam</h2>
+         <div class="row">
+            
+            <div class="column">
+               
+               <p>
+                  <b>Name: </b>João Pedro Torres Pimentel
+               </p>
+               
+               <p>
+                  <b>Identifier: </b>A80874
+               </p>
+               
+               <p>
+                  <b>Email: </b>
+                  <a href="mailto:a80874@alunos.uminho.pt">a80874@alunos.uminho.pt</a>
+               </p>
+               
+               <img src="me.jpeg" alt="me.jpeg" width="250"></img>
+               
+            </div>
+            
+         </div>
+         
+         <hr></hr>
+         <h2>Abstract</h2>
+         <div>
+            
+            
+            <p>
+               O primeiro exercício do teste consistia em definir uma 
+               <b>API</b> de dados para uma coleção de publicações. O primeiro passo foi importar estes dados
+               para o 
+               <b>MongoDB</b>. Para isso, foi necessário resolver problemas de 
+               <i>encoding</i> do ficheiro, através da conversão para 
+               <b>XML</b>(https://www.freeformatter.com/json-to-xml-converter.html#ad-output) e consequente
+               conversão para 
+               <b>JSON</b>(https://www.convertjson.com/xml-to-json.htm). Finzalizados estes passos, apenas restava
+               importar os dados, sendo que foi necessário colocar os mesmos em formato de 
+               <i>array</i> de objetos. Para fazer a importação, foi utilizado o comando 
+               <b>mongoimport --db pubs --collection pubs --file dataset.json --jsonArray</b>
+               
+            </p>
+            
+            
+            <p>
+               Após ter o servidor 
+               <b>Mongo</b> a correr, é necessário instalar os componentes do servidor com o comando 
+               <b>npm i</b>. Feito isto, apenas é necessário correr o mesmo com 
+               <b>npm start</b>, sendo que o servidor ficará à escuta na porta 
+               <b>3007</b>.
+               Dito isto, de modo a dar respostas às rotas pedidas, foi necessário definir um modelo
+               e vários controladores para os dados. É de destacar a rota final pedida, em que foi
+               efetuada uma inversão estrtural da 
+               <b>BD</b>, ou seja, agruparam-se as publicações por autor, em vez de as publicações possuírem
+               os autores em si mesmas. 
+               
+            </p>
+            
+            
+            <p>
+               No que toca ao segundo exercício, foi dividido em duas partes. A primeira consistia
+               em responder a questões e a segunda em definir um servidor de interface para a API
+               fornecida. Assim, tenham-se, em seguida, as questões e respetivas respostas.
+               
+            </p>
+            
+            
+            <p>
+               Questões:
+               
+            </p>
+            
+            
+            <p>
+               Quantos Tipologias estão catalogadas? São 76 tipologias catalogadas (ficheiro questões/ex1.json
+               na pasta do ex2). O pedido efetuado foi: GET 
+               <b>http://clav-api.dglab.gov.pt/api/tipologias?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ</b>
+               
+            </p>
+            
+            <p>
+               Quantos Entidades pertencem à Tipologia tip_FSS? 5 entidades (ficheiro questões/ex2.json
+               na pasta do ex2). O pedido efetuado foi: GET 
+               <b>http://clav-api.dglab.gov.pt/api/tipologias/tip_FSS/elementos?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ</b>
+               
+            </p>
+            
+            <p>
+               Em que processos a tipologia tip_FA participa como Comunicador? 650.10.019, 650.10.020,
+               650.10.212, 650.10.213 (ficheiro questões/ex3.json na pasta do ex2). P pedido efetuado
+               foi: GET 
+               <b>http://clav-api.dglab.gov.pt/api/tipologias/tip_FA/intervencao/participante?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ</b>
+               
+            </p>
+            
+            <p>
+               A que tipologias pertence a entidade ent_SEF? Administração Pública e Forças e serviços
+               de segurança (ficheiro questões/ex4.json na pasta do ex2). O pedido efetuado foi:
+               GET 
+               <b>http://clav-api.dglab.gov.pt/api/entidades/ent_SEF/tipologias?apikey=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE1Nzg4NjAwNTQsImV4cCI6MTU4MTQ1MjA1NH0.HIlH4_Ao6504qaLhhbZ2_OtDzaZaG5FeYy-Yc2d9lwQ</b>
+               
+            </p>
+            
+            
+            <p>
+               No que toca ao servidor de interface, foi utilizado o módulo 
+               <b>axios</b>, permitindo fazer questões à API de forma simples e posteriormente foi efetuado o
+               tratamento dos dados de forma gráfica. Na página inicial são apresentadas as tipologias,
+               em formato tabular, sendo que o identificador de cada uma permite o redireccionamento
+               para a página individual da mesma. Nessa, são apresentadas as caraterísticas associadas,
+               tais como estado, designação e sigla. Além disso, são apresentadas as entidades pertences
+               à tipologia, sendo que os identificadores das mesmas funcionam como hiperligações,
+               apresentando as páginas individuais das mesmas. São, ainda, apresentados os processos
+               em que a tipologia participa e os que de que é dona, também em forma de tabela. Note-se
+               que tocas as páginas permitem voltar à página inicial, sendo este o ponto de partida
+               da aplicação.
+               
+            </p>
+            
+            
+            
+            
+         </div>
+         
+         <hr></hr>
+         <h2>Deliverables</h2>
+         <ol>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/tree/master/Teste">Github</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/Teste/ex1">Exercício 1</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/Teste/ex2">Exercício 2</a>
+            </li>
+            
+            <li>
+               <a href="https://github.com/citoplasme/PRI/blob/master/Teste/PR/pr.html">Project Record HTML</a>
+            </li>
+            
+         </ol>
+         
+      </div>
+      <hr></hr>
+      <p align="center">13/01/2020</p>
+   </body>
+</html>

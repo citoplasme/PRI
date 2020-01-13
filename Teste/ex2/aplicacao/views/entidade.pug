@@ -1,0 +1,27 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-black
+                h1= ent.sigla
+            .w3-container
+                p 
+                    b Estado 
+                    = ent.estado
+                p 
+                    b Sigla 
+                    = ent.sigla
+                p 
+                    b SIOE 
+                    = ent.sioe
+                p 
+                    b Designação 
+                    = ent.designacao
+                p 
+                    b Internacional 
+                    = ent.internacional
+    form(method="get" action=`/`)
+        button.w3-btn.w3-blue.w3-section(style="width: 100%" type="submit") 
+            b Início
+            
